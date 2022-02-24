@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello to flask intro</h1>
+
+    <form action="/sub" method="POST">
+        <label for="symptom1">Choose a symptom1:</label>
+        <select name="symptom1" id="symptom1">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+
+        <label for="symptom2">Choose a symptom2:</label>
+        <select name="symptom2" id="symptom2">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+
+        <label for="symptom3">Choose a symptom3:</label>
+        <select name="symptom3" id="symptom3">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+
+        <label for="symptom4">Choose a symptom4:</label>
+        <select name="symptom4" id="symptom4">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+
+        <label for="symptom5">Choose a symptom5:</label>
+        <select name="symptom5" id="symptom5">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+
+        <label for="symptom6">Choose a symptom6:</label>
+        <select name="symptom6" id="symptom6">
+            <option value="01_itching">itching</option>
+            <option value="02_nodal_skin_eruptions">nodal_skin_eruptions</option>
+            <option value="03_continuous_sneezing">continuous_sneezing</option>
+            <option value="04_shivering">shivering</option>
+            <option value="05_chills">chills</option>
+            <option value="06_joint_pain">joint_pain</option>
+            <option value="07_stomach_pain">stomach_pain</option>
+            <option value="08_acidity">acidity</option>
+            <option value="09_ulcers_on_tongue">ulcers_on_tongue</option>
+            <option value="10_vomiting">vomiting</option>
+            <option value="11_burning_micturition">burning_micturition</option>
+            <option value="12_fatigue">fatigue</option>
+            <option value="13_weight_loss">weight_loss</option>
+            <option value="14_lethargy">lethargy</option>
+            <option value="15_cough">cough</option>
+            <option value="16_high_fever">high_fever</option>
+            <option value="17_sunken_eyes">sunken_eyes</option>
+            <option value="18_breathlessness">breathlessness</option>
+            <option value="19_sweating">sweating</option>
+            <option value="20_dehydration">dehydration</option>
+            <option value="21_indigestion">indigestion</option>
+            <option value="22_headache">headache</option>
+            <option value="23_yellowish_skin">yellowish_skin</option>
+            <option value="24_dark_urine">dark_urine</option>
+            <option value="25_nausea">nausea</option>
+            <option value="26_loss_of_appetite">loss_of_appetite</option>
+            <option value="27_pain_behind_the_eyes">pain_behind_the_eyes</option>
+            <option value="28_back_pain">back_pain</option>
+            <option value="29_constipation">constipation</option>
+            <option value="30_abdominal_pain">abdominal_pain</option>
+            <option value="31_diarrhoea">diarrhoea</option>
+            <option value="32_mild_fever">mild_fever</option>
+            <option value="33_yellow_urine">yellow_urine</option>
+            <option value="34_yellowing_of_eyes">yellowing_of_eyes</option>
+            <option value="35_swelled_lymph_nodes">swelled_lymph_nodes</option>
+            <option value="36_malaise">malaise</option>
+            <option value="37_phlegm">phlegm</option>
+            <option value="38_throat_irritation">throat_irritation</option>
+            <option value="39_redness_of_eyes">redness_of_eyes</option>
+            <option value="40_sinus_pressure">sinus_pressure</option>
+            <option value="41_runny_nose">runny_nose</option>
+            <option value="42_congestion">congestion</option>
+            <option value="43_chest_pain">chest_pain</option>
+            <option value="44_fast_heart_rate">fast_heart_rate</option>
+            <option value="45_dizziness">dizziness</option>
+            <option value="46_muscle_weakness">muscle_weakness</option>
+            <option value="47_swelling_joints">swelling_joints</option>
+            <option value="48_movement_stiffness">movement_stiffness</option>
+            <option value="49_loss_of_balance">loss_of_balance</option>
+            <option value="50_loss_of_smell">loss_of_smell</option>
+            <option value="51_bladder_discomfort">bladder_discomfort</option>
+            <option value="52_foul_smell_of urine">foul_smell_of_urine</option>
+            <option value="53_continuous_feel_of_urine">continuous_feel_of_urine</option>
+            <option value="54_depression">depression</option>
+            <option value="55_irritability">irritability</option>
+            <option value="56_muscle_pain">muscle_pain</option>
+            <option value="57_red_spots_over_body">red_spots_over_body</option>
+            <option value="58_belly_pain">belly_pain</option>
+            <option value="59_dischromic _patches">dischromic _patches</option>
+            <option value="60_watering_from_eyes"> watering_from_eyes</option>
+            <option value="61_increased_appetite">increased_appetite</option>
+            <option value="62_rusty_sputum">rusty_sputum</option>
+            <option value="63_lack_of_concentration">lack_of_concentration</option>
+            <option value="64_visual_disturbances">visual_disturbances</option>
+            <option value="65_receiving_blood_transfusion">receiving_blood_transfusion</option>
+            <option value="66_blood_in_sputum">blood_in_sputum</option>
+            <option value="67_painful_walking">painful_walking</option>
+            <option value="68_pus_filled_pimples">pus_filled_pimples</option>
+            <option value="69_blackheads">blackheads</option>
+            <option value="70_scurring">scurring</option>
+    
+            
+        </select>
+        <br>
+        
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
