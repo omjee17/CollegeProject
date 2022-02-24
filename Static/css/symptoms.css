@@ -1,0 +1,72 @@
+@import url("https://mirinda-mewi.netlify.app/styles/main.css");
+body {
+  background-image: linear-gradient(195deg, #a759d1 25%, #8261ee 75%);
+}
+.logo {
+  color: #007bff;
+}
+.container {
+  padding-left: 15px;
+}
+#symptoms {
+  margin: 5rem auto;
+}
+#symptoms .row {
+  justify-content: center;
+}
+.symptomForm {
+  display: flex;
+  color: white;
+}
+.symptomColumn {
+  margin: 1rem;
+}
+form h1 {
+  color: white;
+}
+form label {
+  margin: 2rem auto 0.5rem auto;
+  display: block;
+}
+form select {
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+}
+.submitbtn {
+  color: white;
+  margin: 1rem;
+  border-radius: 30px;
+  background-color: var(--success);
+  padding: 0.3rem 1rem;
+  border-color: var(--success);
+  transition: all ease-in 0.5s;
+}
+.submitbtn:hover {
+  background-color: var(--lighter-success);
+}
+.clearbtn {
+  transition: all ease-in 0.3s;
+  margin: 1rem;
+  color: white;
+  background-color: var(--caution);
+  border-color: var(--caution);
+  padding: 0.3rem 1.2rem;
+  border-radius: 30px;
+}
+.clearbtn:hover {
+  background-color: var(--light-caution);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(130deg, #a759d1 50%, #8261ee 50%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--snow);
+}
