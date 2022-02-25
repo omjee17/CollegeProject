@@ -5,14 +5,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diagnose | PureLife</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/font-awesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/landingPage.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/symptoms.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/resultPage.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='/images/favicon.png') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c61125ee40.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <h4>Result</h4>
-    {{ s }}
-    <br>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo fs-lg">PureLife
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="./frontPage.html">Home</a></li>
+                            <li><a href="#" class="active">Diagnose</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section padding-top-70 padding-bottom-70">
+        <div class="container" id="symptoms">
+            <div class="row grid">
+                <div class="bg-white">
+                    <h2>Results</h2>
+                    <p>You have been diagnosed with : {{ s }}</p>
+                    <div class="content_do">
+                        <p>Do's</p>
+                        <ul>
+                            <li> ➼ &nbsp; Keep yourself hydrated at all times.</li>
+                            <li> ➼ &nbsp; Remember to reapply insect repellent frequently</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content_dont">
+                        <p>Donts</p>
+                        <ul>
+                            <li> ➼ &nbsp; You must make sure to avoid fatty foods as much as possible.</li>
+                            <li> ➼ &nbsp; One must keep away from cold foods such as cucumber, watermelon, orange,
+                                banana and papaya.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="docHead">Doctors near you:</h2>
+                    <div class="doctorList">
+                        <div class="courses-container">
+                            <div class="course">
+                                <div class="course-preview">
+                                    <img src="https://thumbs.dreamstime.com/b/male-doctor-set-presenting-something-isolated-vector-illustartion-150309046.jpg"
+                                        alt="doctor-pic">
+                                </div>
+                                <div class="course-info">
+                                    <h6>Dermatologist, MBBS </h6>
+                                    <h2>Dr. Parul sharma</h2>
+                                    <p>Email: abc@gmail.com</p>
+                                    <p>phone: 1234567890</p>
+
+                                    <button class="btn">Get in touch</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-container">
+                            <div class="course">
+                                <div class="course-preview">
+                                    <img src="http://www.clker.com/cliparts/e/4/e/a/15169353711334038005free-clipart-doctor.hi.png"
+                                        alt="doctor-pic">
+                                </div>
+                                <div class="course-info">
+                                    <h6>Dermatologist, MBBS </h6>
+                                    <h2>Dr. Parul sharma</h2>
+                                    <p>Email: abc@gmail.com</p>
+                                    <p>phone: 1234567890</p>
+
+                                    <button class="btn">Get in touch</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-container">
+                            <div class="course">
+                                <div class="course-preview">
+                                    <img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-cartoon-doctor-png-medical-worker-image_1158137.jpg"
+                                        alt="doctor-pic">
+                                </div>
+                                <div class="course-info">
+                                    <h6>Dermatologist, MBBS </h6>
+                                    <h2>Dr. Parul sharma</h2>
+                                    <p>Email: abc@gmail.com</p>
+                                    <p>phone: 1234567890</p>
+
+                                    <button class="btn">Get in touch</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-container">
+                            <div class="course">
+                                <div class="course-preview">
+                                    <img src="https://png.pngtree.com/png-clipart/20190903/original/pngtree-cartoon-doctor-medical-worker-png-png-image_4450932.jpg"
+                                        alt="doctor-pic">
+                                </div>
+                                <div class="course-info">
+                                    <h6>Dermatologist, MBBS </h6>
+                                    <h2>Dr. Parul sharma</h2>
+                                    <p>Email: abc@gmail.com</p>
+                                    <p>phone: 1234567890</p>
+
+                                    <button class="btn">Get in touch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Talk To Us</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Give your review and help us to improve our service.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12 contactCenter">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name"
+                                            placeholder="Full Name" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email"
+                                            placeholder="E-Mail Address" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message"
+                                            placeholder="Your Message" required=""></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/Static/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/Static/js/popper.js"></script>
+    <script src="/Static/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/Static/js/scrollreveal.min.js"></script>
+    <script src="/Static/js/waypoints.min.js"></script>
+    <script src="/Static/js/jquery.counterup.min.js"></script>
+    <script src="/Static/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="/Static/js/custom.js"></script>
 
 </body>
 

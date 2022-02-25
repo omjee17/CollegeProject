@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+.bg-white {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.resultColumn {
+  background-color: white;
+}
+.content_do {
+  background-color: lightgreen;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.content_dont {
+  background-color: rgb(238, 94, 94);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.docHead {
+  padding: 0 0 10px 35px;
+  color: white;
+}
+.doctorList {
+  border-radius: 5px;
+  height: 25rem;
+  overflow-y: auto;
+  background-color: #9f3ed3;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--snow);
+}
+.courses-container {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+.course-preview {
+  padding: 0;
+  background-color: #8261ee;
+  display: flex;
+  align-items: center;
+  max-width: 13rem;
+  max-height: 15rem;
+}
+.course-preview img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-right: 10px;
+}
+.course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 35rem;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.course h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.course-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.btn {
+  background-color: #2a265f;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  margin-left: 55%;
+  letter-spacing: 1px;
+}
