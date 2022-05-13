@@ -1,7 +1,2 @@
 # CollegeProject
 
-# CollegeProject
-
-# CollegeProject
-
-# CollegeProject
