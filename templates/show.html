@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DoctorList | PureLife</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/bootstrap.min.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/font-awesome.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/landingPage.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/symptoms.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/docPage.css') }}">
+   <link rel="shortcut icon" href="{{ url_for('static',filename='/images/favicon.png') }}" type="image/x-icon">
+   <script src="https://kit.fontawesome.com/c61125ee40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <header class="header-area header-sticky">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="#" class="logo fs-lg">PureLife
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                     <li><a href="./frontPage.html">Home</a></li>
+                     <li><a href="./index.html">Diagnose</a></li>
+                     <li><a class="active" href="#">Doctors</a></li>
+                     <li><a href="#contact-us">Contact Us</a></li>
+                     <li><a href="{{url_for('login')}}">Login</a></li>
+                  </ul>
+                  <a class='menu-trigger'>
+                     <span>Menu</span>
+
+                  </a>
+                  <!-- ***** Menu End ***** -->
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="doctorList">
+      {% for doc in doctor %}
+      <div class="courses-container">
+         <div class="course">
+            <div class="course-preview">
+               <img
+                  src="https://thumbs.dreamstime.com/b/male-doctor-set-presenting-something-isolated-vector-illustartion-150309046.jpg"
+                  alt="doctor-pic">
+            </div>
+            <div class="course-info">
+               <h5 style="font-weight: 600;">{{doc.specialization}} </h5>
+               <h2>{{doc.name}}</h2>
+               <p>Email: {{doc.email}}</p>
+               <p>phone: {{doc.phone}}</p>
+               <p>{{doc.city}}</p>
+            </div>
+         </div>
+      </div>
+      {% endfor %}
+   </div>
+
+</body>
+
+</html>

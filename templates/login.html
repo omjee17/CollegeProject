@@ -5,129 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | PureLife</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/login.css') }}">
-    <link rel="stylesheet" href="https://mirinda-mewi.netlify.app/styles/main.css">
     <script src="https://kit.fontawesome.com/c61125ee40.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Login Page</h1>
 
-    <form method="POST" action="">
+    <!-- <form method="POST" action="">
         {{ form.hidden_tag() }}
         {{ form.username }}
         {{ form.password }}
-        {{ form.submit }}
-    </form>
+        
+    </form> -->
     <!-- --------------------------------------------------------------------------------------------------- -->
 
-    <div class="formContainer">
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    <div class="login__field">
 
-        <div class="row">
-
-            <!-- signup Here -->
-            <div class="half-wrapper align-items-center flex-col sign-up">
-                <div class="form-wrapper align-items-center">
-                    <form class="form sign-up" method="POST" action="">
-                        {{ form.hidden_tag() }}
-                        <div class="contentInput">
-                            <div class="boxInput mg-y-sm">
-                                <input type="text" class="itemInput" placeholder="Username">
-                            </div>
-                            <div class="boxInput mg-y-sm">
-                                <input type="email" id="email" class="itemInput" placeholder="Email">
-                            </div>
-                            <div class="boxInput mg-b-sm">
-                                <input type="password" class="itemInput" placeholder="Password">
-                            </div>
-                            <div class="boxInput mg-b-sm">
-                                <input type="password" class="itemInput" placeholder="Confirm Password">
-                            </div>
-                        </div class="mg-md">
-                        <button class="btn btn-primary">
-                            Sign up
-                        </button>
-                        <div class="mg-md">
-                            Already have an account?
-                            <button class="pointer" id="Pcolor" {{ form.submit }}>
-                                Sign in here
-                            </button>
-                        </div>
-                </div>
-                </form>
-
-            </div>
-            <!-- sign in here -->
-            <div class="half-wrapper align-items-center flex-col sign-in">
-                <div class="form-wrapper align-items-center">
-                    <div class="form sign-in">
-                        <div class="contentInput">
-                            <div class="boxInput mg-y-sm">
-                                <input type="text" class="itemInput" placeholder="Username" {{ form.username }}>
-                            </div>
-                            <div class="boxInput mg-b-sm">
-                                <input type="password" class="itemInput" placeholder="Password" {{ form.password }}>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">
-                            {{ form.submit }}
-                        </button>
-                        <div class="mg-md">
-                            Forgot password?
-                        </div>
-                        <div class="mg-md">
-                            Don't have an account?
-                            <button class="pointer" id="Pcolor">
-                                Sign up here
-                            </button>
-                        </div>
+                        <i class="login__icon fas fa-user"></i>
+                        {{ form.username }}
                     </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        {{ form.password }}
+                    </div>
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">Log In Now</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </form>
+                <div class="social-login">
+                    <h3>log in via</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                    <a href="/frontPage.html" style="text-decoration: none;" class="button login__submit margin-top">
+                        <i class="button__icon fas fa-chevron-left"></i>
+                        <span class="button__text">Back to Home</span>
+                    </a>
                 </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
             </div>
         </div>
-        <!-- welcome msgs -->
-        <div class="row content-row">
-            <!-- SIGN IN -->
-            <div class="half-wrapper align-items-center flex-col">
-                <div class="offPageContent sign-in">
-
-                </div>
-                <div class="img sign-in">
-
-                </div>
-            </div>
-            <!-- Sign up -->
-            <div class="half-wrapper align-items-center flex-col">
-                <div class="img sign-up">
-
-                </div>
-                <div class="offPageContent sign-up">
-
-                </div>
-            </div>
-
-        </div>
-
     </div>
-
-    <!-- --------------------------------------------------------------------------------------------------- -->
-    <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a>
-
-    <script>
-        const container = document.querySelector(".formContainer");
-        const switchButtons = document.querySelectorAll(".pointer");
-
-        switchButtons.forEach(element => {
-            element.addEventListener("click", () => {
-                container.classList.toggle("sign-in");
-                container.classList.toggle("sign-up");
-            });
-            console.log("da")
-        });
-
-        setTimeout(() => { container.classList.add('sign-in') }, 200)
-    </script>
 </body>
 
 </html>
